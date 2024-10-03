@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Calculator</title>
     <style>
-        .input-num {}
+        .input-num {
+            margin: 15px auto;
+            padding: 10px ;
+            width: 300px;
+            font-size: 18px;
+        }
 
         .heading {
+            font-size: 40px;
             color: #009900;
             text-align: center;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -18,17 +24,27 @@
             border: 5px double #004d00;
             width: 350px;
             display: block;
-            margin: 40px auto;
+            margin: 90px auto;
             padding: 10px 30px;
             background-color: #b3ffb3;
+        }
+
+        .head-container{
+            display: flex;
+        }
+        .image{
+            width:70px;
+            height: 80px;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
+        <div class="head-container">
         <h1 class="heading">Calculator</h1>
-
+        <img src="math-book.png" class="image">
+        </div>
         <input id="num1" placeholder="Enter first number" class="input-num">
         <input id="num2" placeholder="Enter second number" class="input-num">
 
